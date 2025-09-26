@@ -1,0 +1,80 @@
+'use client'
+
+import { motion } from 'framer-motion'
+
+const AboutSection = () => {
+  return (
+    <section id="about" className="section-padding bg-gradient-to-br from-muted-sage/10 to-warm-beige/20">
+      <div className="container-custom">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="relative"
+          >
+            <div 
+              className="w-full h-96 lg:h-[500px] rounded-2xl bg-cover bg-center shadow-lg"
+              style={{
+                backgroundImage: `url('https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80')`
+              }}
+            />
+            <div className="absolute inset-0 bg-gradient-to-br from-muted-sage/10 to-warm-beige/10 rounded-2xl" />
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="space-y-8"
+          >
+            <div>
+              <h2 className="text-4xl md:text-5xl font-serif font-bold text-charcoal mb-6">
+                About Julie
+              </h2>
+            </div>
+
+            <div className="space-y-6 text-lg text-charcoal/80 leading-relaxed">
+              <p>
+                My life hasn't been a straight line, and I believe we should all feel safe to say that out loud...
+              </p>
+              <p>
+                I discovered coaching in 2023 and it was a game changer...
+              </p>
+              <p>
+                I now help others experience what I found: that coaching, when layered into a thoughtful life practice, can lead to meaningful impact and lasting transformation.
+              </p>
+            </div>
+
+            <motion.div
+              whileHover={{ scale: 1.02 }}
+              className="bg-soft-white/50 backdrop-blur-sm rounded-xl p-6 border border-muted-sage/20"
+            >
+              <p className="text-charcoal/70 italic">
+                "Every transition is an opportunity for growth, and every person has the wisdom within them to navigate their path forward."
+              </p>
+            </motion.div>
+
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={() => {
+                const element = document.getElementById('contact')
+                if (element) {
+                  element.scrollIntoView({ behavior: 'smooth' })
+                }
+              }}
+              className="btn-accent text-lg px-8 py-4 mt-6"
+            >
+              Let's Connect
+            </motion.button>
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export default AboutSection
