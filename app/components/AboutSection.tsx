@@ -15,11 +15,12 @@ const AboutSection = () => {
             className="relative"
           >
             <div 
-              className="w-full h-96 lg:h-[500px] rounded-2xl bg-cover bg-center shadow-lg golden-filter"
+              className="w-full h-[600px] rounded-2xl bg-cover bg-center shadow-lg golden-filter"
               style={{
                 backgroundImage: `url('/photos/julie.jpg')`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center top'
+                backgroundSize: 'contain',
+                backgroundPosition: 'center center',
+                backgroundRepeat: 'no-repeat'
               }}
             />
             <div className="absolute inset-0 bg-gradient-to-br from-muted-sage/10 to-warm-beige/10 rounded-2xl" />
