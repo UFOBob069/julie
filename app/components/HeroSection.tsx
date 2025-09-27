@@ -17,17 +17,17 @@ const HeroSection = () => {
             <div 
               className="w-full h-full bg-cover bg-center bg-no-repeat golden-filter"
               style={{
-                backgroundImage: `url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')`
+                backgroundImage: `url('/photos/hero-bg.jpg')`
               }}
             />
-        <div className="absolute inset-0 bg-charcoal/40" />
-        <div className="absolute inset-0 bg-gradient-to-br from-muted-sage/20 to-warm-beige/20" />
+        <div className="absolute inset-0 bg-charcoal/60" />
+        <div className="absolute inset-0 bg-gradient-to-br from-muted-sage/30 to-warm-beige/30" />
       </div>
 
       {/* Content */}
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
         {/* Text Background Overlay */}
-        <div className="absolute inset-0 bg-charcoal/30 rounded-3xl -m-8 blur-sm" />
+        <div className="absolute inset-0 bg-charcoal/50 rounded-3xl -m-8 blur-sm" />
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -38,17 +38,17 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-5xl md:text-7xl font-serif font-bold text-soft-white leading-tight drop-shadow-lg"
+            className="text-5xl md:text-7xl font-serif font-bold text-soft-white leading-tight drop-shadow-2xl"
           >
             Julie Bosshart
-            <span className="block text-4xl md:text-5xl text-gold mt-2 drop-shadow-lg">Coaching</span>
+            <span className="block text-4xl md:text-5xl text-gold mt-2 drop-shadow-2xl">Coaching</span>
           </motion.h1>
 
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="text-xl md:text-2xl text-soft-white max-w-3xl mx-auto leading-relaxed drop-shadow-lg"
+            className="text-xl md:text-2xl text-soft-white max-w-3xl mx-auto leading-relaxed drop-shadow-2xl"
           >
             Guiding you through life's transitions with clarity, compassion, and direction.
           </motion.p>

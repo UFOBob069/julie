@@ -27,15 +27,15 @@ const Navigation = () => {
       animate={{ y: 0 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled 
-          ? 'bg-soft-white/95 backdrop-blur-sm shadow-sm' 
-          : 'bg-soft-white/90 backdrop-blur-sm'
+          ? 'bg-soft-white/98 backdrop-blur-sm shadow-sm' 
+          : 'bg-soft-white/95 backdrop-blur-sm'
       }`}
     >
       <div className="container-custom">
         <div className="flex items-center justify-between py-4">
           <motion.div
             whileHover={{ scale: 1.05 }}
-            className="text-2xl font-serif font-semibold text-charcoal cursor-pointer drop-shadow-sm"
+            className="text-2xl font-serif font-semibold text-charcoal cursor-pointer drop-shadow-md"
             onClick={() => scrollToSection('home')}
           >
             Julie Bosshart
@@ -47,7 +47,7 @@ const Navigation = () => {
                 key={item}
                 whileHover={{ scale: 1.05 }}
                 onClick={() => scrollToSection(item)}
-                className="text-charcoal hover:text-muted-sage transition-colors duration-300 capitalize drop-shadow-sm"
+                className="text-charcoal hover:text-muted-sage transition-colors duration-300 capitalize drop-shadow-md"
               >
                 {item}
               </motion.button>
@@ -58,7 +58,7 @@ const Navigation = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => scrollToSection('contact')}
-            className="btn-accent text-sm drop-shadow-sm"
+            className="btn-accent text-sm drop-shadow-md"
           >
             Book a Call
           </motion.button>
