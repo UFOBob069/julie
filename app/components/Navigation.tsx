@@ -25,11 +25,7 @@ const Navigation = () => {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled 
-          ? 'bg-light-orange/98 backdrop-blur-sm shadow-sm' 
-          : 'bg-light-orange/95 backdrop-blur-sm'
-      }`}
+      className="fixed top-0 left-0 right-0 z-50 bg-light-orange shadow-sm"
     >
       <div className="container-custom">
         <div className="flex items-center justify-between py-4">
