@@ -17,7 +17,9 @@ const AboutSection = () => {
             <div 
               className="w-full h-96 lg:h-[500px] rounded-2xl bg-cover bg-center shadow-lg golden-filter"
               style={{
-                backgroundImage: `url('/photos/julie.jpg')`
+                backgroundImage: `url('/photos/julie.jpg')`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center center'
               }}
             />
             <div className="absolute inset-0 bg-gradient-to-br from-muted-sage/10 to-warm-beige/10 rounded-2xl" />

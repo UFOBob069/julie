@@ -33,7 +33,9 @@ const ContactSection = () => {
         <div 
           className="w-full h-full bg-cover bg-center opacity-10 golden-filter"
           style={{
-            backgroundImage: `url('/photos/contact-bg.jpg')`
+            backgroundImage: `url('/photos/contact-bg.jpg')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center center'
           }}
         />
       </div>
@@ -75,6 +77,8 @@ const ContactSection = () => {
 
             <motion.a
               href="https://calendar.app.google/Pw4y2KqVq3P8ZtyZ7"
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="flex items-center justify-center w-full bg-gold text-charcoal px-8 py-6 rounded-xl font-medium transition-all duration-300 hover:shadow-lg group"

@@ -17,7 +17,9 @@ const HeroSection = () => {
             <div 
               className="w-full h-full bg-cover bg-center bg-no-repeat golden-filter"
               style={{
-                backgroundImage: `url('/photos/hero-bg.jpg')`
+                backgroundImage: `url('/photos/hero-bg.jpg')`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center center'
               }}
             />
         <div className="absolute inset-0 bg-charcoal/40" />
