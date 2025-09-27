@@ -102,7 +102,7 @@ const CoachingSection = () => {
             <div 
               className="w-80 h-[500px] mx-auto rounded-2xl bg-cover bg-center golden-filter"
               style={{
-                backgroundImage: `url('/photos/coaching-1.jpg')`,
+                backgroundImage: `url('/photos/coaching-2.jpg')`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center center'
               }}
