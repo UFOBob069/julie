@@ -31,7 +31,7 @@ const ContactSection = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <div 
-          className="w-full h-full bg-cover bg-center opacity-10"
+          className="w-full h-full bg-cover bg-center opacity-10 golden-filter"
           style={{
             backgroundImage: `url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')`
           }}
@@ -64,17 +64,17 @@ const ContactSection = () => {
             className="space-y-8"
           >
             <motion.a
-              href="mailto:julie@yourdomain.com"
+              href="mailto:bosshart.julie@gmail.com"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="flex items-center justify-center w-full bg-charcoal text-soft-white px-8 py-6 rounded-xl font-medium transition-all duration-300 hover:shadow-lg group"
+              className="flex items-center justify-center w-full bg-charcoal text-light-orange px-8 py-6 rounded-xl font-medium transition-all duration-300 hover:shadow-lg group"
             >
               <Mail className="w-6 h-6 mr-3 group-hover:scale-110 transition-transform duration-300" />
               Email Julie
             </motion.a>
 
             <motion.a
-              href="#"
+              href="https://calendar.app.google/Pw4y2KqVq3P8ZtyZ7"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="flex items-center justify-center w-full bg-gold text-charcoal px-8 py-6 rounded-xl font-medium transition-all duration-300 hover:shadow-lg group"

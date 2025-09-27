@@ -8,15 +8,16 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'soft-white': '#FAFAFA',
-        'muted-sage': '#A3B5A7',
-        'warm-beige': '#F6F1EB',
+        'light-orange': '#FFF9F2',
+        'light-yellow-green': '#D8DFBE',
+        'gray-yellow-green': '#5C6244',
         'charcoal': '#2B2B2B',
         'gold': '#D4AF37',
       },
       fontFamily: {
-        'serif': ['Playfair Display', 'serif'],
-        'sans': ['Inter', 'Source Sans Pro', 'sans-serif'],
+        'alta': ['Alta', 'serif'],
+        'liana': ['Liana', 'cursive'],
+        'tt-drugs': ['TT Drugs', 'sans-serif'],
       },
       animation: {
         'fade-in': 'fadeIn 0.6s ease-in-out',

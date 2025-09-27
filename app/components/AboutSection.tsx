@@ -15,7 +15,7 @@ const AboutSection = () => {
             className="relative"
           >
             <div 
-              className="w-full h-96 lg:h-[500px] rounded-2xl bg-cover bg-center shadow-lg"
+              className="w-full h-96 lg:h-[500px] rounded-2xl bg-cover bg-center shadow-lg golden-filter"
               style={{
                 backgroundImage: `url('https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80')`
               }}

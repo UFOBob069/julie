@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alta:wght@400&family=Liana:wght@400&family=TT+Drugs:wght@300;400;500;600&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,23 +9,23 @@
   }
   
   body {
-    font-family: 'Inter', sans-serif;
-    background-color: #FAFAFA;
+    font-family: 'TT Drugs', sans-serif;
+    background-color: #FFF9F2;
     color: #2B2B2B;
   }
   
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Alta', serif;
   }
 }
 
 @layer components {
   .btn-primary {
-    @apply bg-charcoal text-soft-white px-8 py-4 rounded-xl font-medium transition-all duration-300 hover:shadow-lg hover:scale-105;
+    @apply bg-charcoal text-light-orange px-8 py-4 rounded-xl font-medium transition-all duration-300 hover:shadow-lg hover:scale-105;
   }
   
   .btn-secondary {
-    @apply bg-muted-sage text-charcoal px-8 py-4 rounded-xl font-medium transition-all duration-300 hover:shadow-lg hover:scale-105;
+    @apply bg-light-yellow-green text-charcoal px-8 py-4 rounded-xl font-medium transition-all duration-300 hover:shadow-lg hover:scale-105;
   }
   
   .btn-accent {
@@ -41,6 +41,10 @@
   }
   
   .card {
-    @apply bg-soft-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300;
+    @apply bg-light-orange rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300;
+  }
+  
+  .golden-filter {
+    filter: sepia(0.3) saturate(1.2) hue-rotate(15deg) brightness(1.1) contrast(0.9);
   }
 }
