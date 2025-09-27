@@ -18,12 +18,29 @@ const ContactSection = () => {
     })
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission here
-    console.log('Form submitted:', formData)
-    // Reset form
-    setFormData({ name: '', email: '', message: '' })
+    
+    try {
+      // Create mailto link with form data
+      const subject = encodeURIComponent(`Contact from ${formData.name}`)
+      const body = encodeURIComponent(
+        `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+      )
+      const mailtoLink = `mailto:bosshart.julie@gmail.com?subject=${subject}&body=${body}`
+      
+      // Open email client
+      window.location.href = mailtoLink
+      
+      // Reset form
+      setFormData({ name: '', email: '', message: '' })
+      
+      // Show success message (optional)
+      alert('Your email client will open with your message. Please send the email to complete your inquiry.')
+    } catch (error) {
+      console.error('Error submitting form:', error)
+      alert('There was an error. Please try emailing directly at bosshart.julie@gmail.com')
+    }
   }
 
   return (
