@@ -22,24 +22,28 @@ const ContactSection = () => {
     e.preventDefault()
     
     try {
-      // Create mailto link with form data
-      const subject = encodeURIComponent(`Contact from ${formData.name}`)
-      const body = encodeURIComponent(
-        `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
-      )
-      const mailtoLink = `mailto:bosshart.julie@gmail.com?subject=${subject}&body=${body}`
-      
-      // Open email client
-      window.location.href = mailtoLink
-      
-      // Reset form
-      setFormData({ name: '', email: '', message: '' })
-      
-      // Show success message (optional)
-      alert('Your email client will open with your message. Please send the email to complete your inquiry.')
+      const response = await fetch('https://formspree.io/f/mvgwzwyk', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        }),
+      })
+
+      if (response.ok) {
+        // Reset form
+        setFormData({ name: '', email: '', message: '' })
+        alert('Thank you for your message! I\'ll get back to you soon.')
+      } else {
+        throw new Error('Form submission failed')
+      }
     } catch (error) {
       console.error('Error submitting form:', error)
-      alert('There was an error. Please try emailing directly at bosshart.julie@gmail.com')
+      alert('There was an error sending your message. Please try emailing directly at bosshart.julie@gmail.com')
     }
   }
 
