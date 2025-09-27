@@ -19,7 +19,7 @@ const AboutSection = () => {
               style={{
                 backgroundImage: `url('/photos/julie.jpg')`,
                 backgroundSize: 'cover',
-                backgroundPosition: 'center center'
+                backgroundPosition: 'center top'
               }}
             />
             <div className="absolute inset-0 bg-gradient-to-br from-muted-sage/10 to-warm-beige/10 rounded-2xl" />

@@ -87,7 +87,7 @@ const CoachingSection = () => {
               style={{
                 backgroundImage: `url('/photos/coaching-1.jpg')`,
                 backgroundSize: 'cover',
-                backgroundPosition: 'center center'
+                backgroundPosition: 'center top'
               }}
             />
             <div className="absolute inset-0 bg-gradient-to-br from-muted-sage/20 to-warm-beige/20 rounded-2xl" />
@@ -108,7 +108,7 @@ const CoachingSection = () => {
               style={{
                 backgroundImage: `url('/photos/coaching-1.jpg')`,
                 backgroundSize: 'cover',
-                backgroundPosition: 'center center'
+                backgroundPosition: 'center top'
               }}
             />
             <div className="absolute inset-0 bg-gradient-to-br from-warm-beige/20 to-muted-sage/20 rounded-2xl" />
