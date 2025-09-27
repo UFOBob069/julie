@@ -38,7 +38,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-5xl md:text-7xl font-serif font-bold text-soft-white leading-tight drop-shadow-lg"
+            className="text-5xl md:text-7xl font-serif font-bold text-white leading-tight drop-shadow-lg"
           >
             Julie Bosshart
             <span className="block text-4xl md:text-5xl text-gold mt-2 drop-shadow-lg">Coaching</span>
@@ -48,7 +48,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="text-xl md:text-2xl text-soft-white max-w-3xl mx-auto leading-relaxed drop-shadow-lg"
+            className="text-xl md:text-2xl text-white max-w-3xl mx-auto leading-relaxed drop-shadow-lg"
           >
             Guiding you through life's transitions with clarity, compassion, and direction.
           </motion.p>

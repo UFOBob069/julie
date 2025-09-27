@@ -27,8 +27,8 @@ const Navigation = () => {
       animate={{ y: 0 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled 
-          ? 'bg-soft-white/98 backdrop-blur-sm shadow-sm' 
-          : 'bg-soft-white/95 backdrop-blur-sm'
+          ? 'bg-light-orange/98 backdrop-blur-sm shadow-sm' 
+          : 'bg-light-orange/95 backdrop-blur-sm'
       }`}
     >
       <div className="container-custom">
