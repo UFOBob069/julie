@@ -50,14 +50,9 @@ const AboutSection = () => {
               </p>
             </div>
 
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="bg-soft-white/50 backdrop-blur-sm rounded-xl p-6 border border-muted-sage/20"
-            >
-              <p className="text-charcoal/70 italic">
-                Every transition is an opportunity for growth, and every person has the wisdom within them to navigate their path forward.
-              </p>
-            </motion.div>
+            <p className="text-charcoal/70 italic text-lg">
+              Every transition is an opportunity for growth, and every person has the wisdom within them to navigate their path forward.
+            </p>
 
             <motion.button
               whileHover={{ scale: 1.05 }}
