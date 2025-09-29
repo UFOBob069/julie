@@ -52,7 +52,7 @@ const ContactSection = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <div 
-          className="w-full h-full bg-cover bg-center opacity-10 golden-filter"
+          className="w-full h-full bg-cover bg-center opacity-10"
           style={{
             backgroundImage: `url('/photos/contact-bg.jpg')`,
             backgroundSize: 'cover',

@@ -79,7 +79,7 @@ const CoachingSection = () => {
             className="relative"
           >
             <div 
-              className="w-80 h-[500px] mx-auto rounded-2xl bg-cover bg-center golden-filter"
+              className="w-80 h-[500px] mx-auto rounded-2xl bg-cover bg-center"
               style={{
                 backgroundImage: `url('/photos/coaching-1.jpg')`,
                 backgroundSize: 'cover',

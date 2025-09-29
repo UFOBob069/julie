@@ -15,7 +15,7 @@ const HeroSection = () => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
             <div 
-              className="w-full h-full bg-cover bg-center bg-no-repeat golden-filter"
+              className="w-full h-full bg-cover bg-center bg-no-repeat"
               style={{
                 backgroundImage: `url('/photos/hero-bg.jpg')`,
                 backgroundSize: 'cover',

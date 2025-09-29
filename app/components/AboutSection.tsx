@@ -15,7 +15,7 @@ const AboutSection = () => {
             className="relative"
           >
             <div 
-              className="w-80 h-[600px] mx-auto rounded-2xl bg-cover bg-center shadow-lg golden-filter"
+              className="w-80 h-[600px] mx-auto rounded-2xl bg-cover bg-center shadow-lg"
               style={{
                 backgroundImage: `url('/photos/julie.jpg')`,
                 backgroundSize: 'cover',
