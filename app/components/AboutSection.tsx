@@ -40,10 +40,10 @@ const AboutSection = () => {
 
             <div className="space-y-6 text-lg text-charcoal/80 leading-relaxed">
               <p>
-                My life hasn't been a straight line, and I believe we should all feel safe to say that out loud...
+                My life hasn't been a straight line, and I believe we should all feel safe to say that out loud.
               </p>
               <p>
-                I discovered coaching in 2023 and it was a game changer...
+                I discovered coaching in 2023 and it was a game changer.
               </p>
               <p>
                 I now help others experience what I found: that coaching, when layered into a thoughtful life practice, can lead to meaningful impact and lasting transformation.
@@ -55,7 +55,7 @@ const AboutSection = () => {
               className="bg-soft-white/50 backdrop-blur-sm rounded-xl p-6 border border-muted-sage/20"
             >
               <p className="text-charcoal/70 italic">
-                "Every transition is an opportunity for growth, and every person has the wisdom within them to navigate their path forward."
+                Every transition is an opportunity for growth, and every person has the wisdom within them to navigate their path forward.
               </p>
             </motion.div>
 
