@@ -22,7 +22,6 @@ const AboutSection = () => {
                 backgroundPosition: 'center center'
               }}
             />
-            <div className="absolute inset-0 bg-gradient-to-br from-muted-sage/10 to-warm-beige/10" />
           </motion.div>
 
           <motion.div

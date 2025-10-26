@@ -87,7 +87,6 @@ const CoachingSection = () => {
                 backgroundPosition: 'center center'
               }}
             />
-            <div className="absolute inset-0 bg-gradient-to-br from-muted-sage/20 to-warm-beige/20" />
           </motion.div>
         </div>
 
@@ -108,7 +107,6 @@ const CoachingSection = () => {
                 backgroundPosition: 'center center'
               }}
             />
-            <div className="absolute inset-0 bg-gradient-to-br from-warm-beige/20 to-muted-sage/20" />
           </motion.div>
 
           <motion.div
