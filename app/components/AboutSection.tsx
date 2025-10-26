@@ -15,14 +15,14 @@ const AboutSection = () => {
             className="relative"
           >
             <div 
-              className="w-80 h-[600px] mx-auto rounded-2xl bg-cover bg-center shadow-lg"
+              className="w-80 h-[600px] mx-auto bg-cover bg-center shadow-lg"
               style={{
                 backgroundImage: `url('/photos/julie.jpg')`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center center'
               }}
             />
-            <div className="absolute inset-0 bg-gradient-to-br from-muted-sage/10 to-warm-beige/10 rounded-2xl" />
+            <div className="absolute inset-0 bg-gradient-to-br from-muted-sage/10 to-warm-beige/10" />
           </motion.div>
 
           <motion.div
