@@ -51,7 +51,7 @@ const AboutSection = () => {
             </div>
 
             <p className="text-charcoal/70 italic text-lg">
-              Every transition is an opportunity for growth, and every person has the wisdom within them to navigate their path forward.
+              "All you need is already within you." - Kris Collins
             </p>
 
             <motion.button

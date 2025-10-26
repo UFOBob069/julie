@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Alta:wght@400&family=Liana:wght@400&family=TT+Drugs:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=TT+Drugs:wght@300;400;500;600&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -15,7 +15,7 @@
   }
   
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Alta', serif;
+    font-family: 'Raleway', sans-serif;
   }
 }
 

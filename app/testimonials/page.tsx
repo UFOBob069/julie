@@ -19,7 +19,7 @@ const TestimonialsPage = () => {
     {
       id: 3,
       text: "During my coaching sessions with Julie, I discovered how to slow down, listen to myself, and trust what I already know deep down. I learned to notice how my body responds to different situations and to take small, intentional steps that help me feel more grounded and aligned. Through this process, I've not only gained clarity but also learned to believe in myself more, and that belief has given me a genuine sense of confidence in how I move through life.\n\nWhat surprised me most was how gentle yet powerful the process was. Julie has a unique ability to help you uncover insights without ever feeling pressured or judged. Her guidance is practical and intuitive, helping you connect the dots between how you think, feel, and act.\n\nFrom the very first session, I felt completely safe and supported. Julie creates an atmosphere of trust and openness that allows for real growth and self-discovery.\n\nI would wholeheartedly recommend Julie to anyone looking to reconnect with themselves, build confidence, and find a stronger sense of inner balance. Her compassionate and grounded approach truly helps you see what's possible when you start believing in yourself.",
-      author: "K"
+      author: "KK"
     },
     {
       id: 4,

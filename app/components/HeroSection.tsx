@@ -22,8 +22,8 @@ const HeroSection = () => {
                 backgroundPosition: 'center center'
               }}
             />
-        <div className="absolute inset-0 bg-charcoal/40" />
-        <div className="absolute inset-0 bg-gradient-to-br from-muted-sage/20 to-warm-beige/20" />
+        <div className="absolute inset-0 bg-charcoal/37" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#a6bf86]/70 to-[#a6bf86]/70" />
       </div>
 
       {/* Content */}

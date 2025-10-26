@@ -23,14 +23,15 @@ const CoachingSection = () => {
             className="max-w-4xl mx-auto space-y-8"
           >
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-charcoal">
-              Perhaps you're trying to discern the meaning of where you've been or trying to figure out where you're headed next.
+              Perhaps you're trying to understand the meaning of where you've been.<br />
+              Perhaps you're trying to figure out where you're headed next.
             </h2>
             <div className="space-y-6 text-lg text-charcoal/80 leading-relaxed">
               <p>
-                You likely feel a bit disoriented. You may be asking, "So what do I do next?" How do you figure out how to navigate all of this while staying true to yourself?
+                You may feel a bit disoriented. How do you figure out how to navigate all of this while staying true to yourself?
               </p>
               <p className="text-xl font-medium text-charcoal">
-                I'm here to help. We will work together.
+                I'm here to help.
               </p>
             </div>
             <motion.button
@@ -39,7 +40,7 @@ const CoachingSection = () => {
               onClick={() => scrollToSection('details')}
               className="btn-accent text-lg px-10 py-5"
             >
-              See How We Work Together
+              See how we work together
             </motion.button>
           </motion.div>
         </div>
@@ -58,7 +59,7 @@ const CoachingSection = () => {
             </h2>
             <div className="space-y-4 text-lg text-charcoal/80 leading-relaxed">
               <p>
-                You just experienced a huge change in your life, and while you would have been overwhelmed in the past, you now have the tools and trust in yourself to move forward. The feelings that once made you feel paralyzed now help you understand how best to navigate this new world that is aligned to what is best for you.
+                Imagine you just experienced a huge change in your life. In the past, you would have been overwhelmed. Now you have the tools and trust in yourself to move forward with confidence. The feelings that once made you feel paralyzed now help you understand how to navigate this new world in alignment with what is best for you.
               </p>
             </div>
             <motion.button
@@ -122,7 +123,7 @@ const CoachingSection = () => {
             </h2>
             <div className="space-y-4 text-lg text-charcoal/80 leading-relaxed">
               <p>
-                As a life coach specializing in transitional seasons, I help individuals navigate these in-between spaces with clarity, compassion, and strategic support. My work is about honoring where you've been, helping you stabilize where you are, and helping to guide you toward your next chapter that feels deeply aligned with your truth.
+                As a life coach, I help individuals navigate the blurry moments of life with clarity, compassion, and strategic support. My work is about honoring where you've been, stabilizing where you are, and helping you toward your next chapter.
               </p>
             </div>
             <motion.button

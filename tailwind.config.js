@@ -11,12 +11,14 @@ module.exports = {
         'light-orange': '#FFF9F2',
         'light-yellow-green': '#D8DFBE',
         'gray-yellow-green': '#5C6244',
-        'charcoal': '#2B2B2B',
+        'charcoal': '#3b4430',
         'gold': '#D4AF37',
+        'muted-sage': '#A3B5A7',
+        'warm-beige': '#F6F1EB',
+        'soft-white': '#FAFAFA',
       },
       fontFamily: {
-        'alta': ['Alta', 'serif'],
-        'liana': ['Liana', 'cursive'],
+        'raleway': ['Raleway', 'sans-serif'],
         'tt-drugs': ['TT Drugs', 'sans-serif'],
       },
       animation: {
