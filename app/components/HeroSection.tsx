@@ -22,8 +22,6 @@ const HeroSection = () => {
                 backgroundPosition: 'center center'
               }}
             />
-        <div className="absolute inset-0 bg-charcoal/37" />
-        <div className="absolute inset-0 bg-gradient-to-br from-[#a6bf86]/70 to-[#a6bf86]/70" />
       </div>
 
       {/* Content */}
@@ -40,7 +38,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-5xl md:text-7xl font-serif font-bold text-white leading-tight drop-shadow-lg"
+            className="text-5xl md:text-7xl font-serif font-bold text-white leading-tight drop-shadow-2xl"
           >
             Julie Bosshart Coaching
           </motion.h1>
@@ -49,7 +47,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="text-xl md:text-2xl text-white max-w-3xl mx-auto leading-relaxed drop-shadow-lg"
+            className="text-xl md:text-2xl text-white max-w-3xl mx-auto leading-relaxed drop-shadow-2xl"
           >
             Helping you build a foundation for growth with clarity and compassion.
           </motion.p>
