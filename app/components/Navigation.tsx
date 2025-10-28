@@ -2,9 +2,12 @@
 
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false)
+  const pathname = usePathname()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,6 +24,16 @@ const Navigation = () => {
     }
   }
 
+  const handleNavigation = (sectionId: string) => {
+    if (pathname === '/') {
+      // On home page, scroll to section
+      scrollToSection(sectionId)
+    } else {
+      // On other pages, navigate to home page with hash
+      window.location.href = `/#${sectionId}`
+    }
+  }
+
   return (
     <motion.nav
       initial={{ y: -100 }}
@@ -32,7 +45,7 @@ const Navigation = () => {
           <motion.div
             whileHover={{ scale: 1.05 }}
             className="text-2xl font-serif font-semibold text-charcoal cursor-pointer drop-shadow-md"
-            onClick={() => scrollToSection('home')}
+            onClick={() => handleNavigation('home')}
           >
             Julie Bosshart
           </motion.div>
@@ -42,7 +55,7 @@ const Navigation = () => {
               <motion.button
                 key={item}
                 whileHover={{ scale: 1.05 }}
-                onClick={() => scrollToSection(item)}
+                onClick={() => handleNavigation(item)}
                 className="text-charcoal hover:text-muted-sage transition-colors duration-300 capitalize drop-shadow-md"
               >
                 {item}
@@ -53,7 +66,7 @@ const Navigation = () => {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            onClick={() => scrollToSection('contact')}
+            onClick={() => handleNavigation('contact')}
             className="btn-accent text-sm drop-shadow-md"
           >
             Book a Call
